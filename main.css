@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,200;0,300;0,400;0,600;1,200&family=Montserrat:wght@200&display=swap');
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+.top {
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    background: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+    border-bottom-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+    padding: 2em 4em;
+}
+.top header{
+    padding: 1em 0;
+    font-weight: bold;
+}
+.circle {
+    border-radius: 50%;
+    max-width: 150px;
+    max-width: 150px;
+    padding: 0.2em;
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    margin: auto;
+}
+span {
+    font-size: 4em;
+    font-weight: bold;
+    display: block;
+    margin: 0.2em 0em;
+}
+
+.bottom {
+    margin:2em 2em;
+}
+.bottom header {
+    font-weight: bold;
+    font-size: 1.3em;
+    margin-bottom: 1.5em;
+}
+.block1, .block2, .block3, .block4{
+    padding: 6%;
+    border-radius: 0.5em;
+    display: flex;
+    justify-content: space-between;
+    margin: 1.2em 0em;
+}
+left {
+    font-weight: bold;
+    font-size: 1.3em;
+}
+svg {
+    padding-right: 0.5em;
+    justify-content: center;
+    align-items: center;
+    font-size: 50%;
+}
+acq{
+    font-weight: bold;
+}
+.block1{
+    background: #FFF6F5;
+}
+.block2{
+    background: #FFFBF2;
+}
+
+.block3{
+    background: #F2FBFA;
+}
+
+.block4{
+    background: #F3F3FD;
+}
+reaction {
+    color: hsl(0, 100%, 67%);
+}
+memory {
+    color: hsl(39, 100%, 56%);
+}
+verbal {
+    color: hsl(166, 100%, 37%);
+}
+visual {
+    color: hsl(234, 85%, 45%);
+}
+input[type="button"]{
+    font-size: 1em;
+    padding: 1.5em;
+    border-radius: 3em;
+    width: 100%;
+    background: hsl(224, 30%, 27%);
+    color: hsl(0, 0%, 100%);
+    font-weight: bold;
+    margin: 1em 0em;
+    cursor: pointer;
+}
+input[type="button"]:hover{
+    background-color: #543AF7;
+}
+@media (min-width: 450px) {
+    body{
+        display: grid;
+        place-items: center;
+        min-height: 100vh;
+    }
+    section.horizontal {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .top {
+        border-radius: 2em;
+    }
+}
